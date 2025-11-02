@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    
+    <title>
+        Log In for VK
+    </title>
+   <script>
+    function checkPassword(){
+        let password = document.getElementById("passwordbox")
+      let passwordEnterent = password.value;
+    if(passwordEnterent === "123") {
+        return true
+    }
+    alert("Неверный логин или пароль!")
+    return false
+    }
+  
+   </script>
+</head>
+<body>
+
+    <img src="Instagram_Color_icon.png" alt="Where is Photo?" width="222"> VK<hr>
+    Логин <input type="url"> <br>
+    Пароль <input id="passwordbox" type="password"><br>
+    <button><a href="Home VK.HTML" onclick="return checkPassword()">Войти</a></button><hr>
+    Нет аккаунта? Нажми, чтобы <a href="создать аккаунт.html">создать</a>. <a href="поддержка.html">Поддержка</a>
+
+</body>
+</html>
